@@ -42,4 +42,5 @@ Mergesort is guaranteed to be O(nlog2(n)). A disadvantage of mergesort is that i
 --------------------------------------------
 
 Source: Javascript Data Structures and Algorithms by Sammie Bae (Ch.10 Searching and Sorting)
+
 --------------------------------------------
