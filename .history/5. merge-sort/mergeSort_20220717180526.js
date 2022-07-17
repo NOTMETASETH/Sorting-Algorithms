@@ -1,4 +1,4 @@
-// Merges two already sorted arrays
+// Merge function from earlier
 function merge(array1, array2) {
   let results = [];
   let i = 0;
@@ -22,5 +22,15 @@ function merge(array1, array2) {
   }
   return results;
 }
-console.log(merge([100, 200], [1, 2, 3, 5, 6]));
-// [ 1, 2, 3, 5, 6, 100, 200 ]
+
+// Recrusive Merge Sort
+function mergeSort(array) {
+  if (array.length <= 1) return array;
+  let mid = Math.floor(array.length / 2);
+  let left = mergeSort(array.slice(0, mid));
+  let right = mergeSort(array.slice(mid));
+  return merge(left, right);
+}
+
+console.log(mergeSort([10, 24, 76, 73]));
+// [ 10, 24, 73, 76]
