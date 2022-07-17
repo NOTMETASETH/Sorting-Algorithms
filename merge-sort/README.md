@@ -39,4 +39,7 @@ A stable sort is one that’s guaranteed not to reorder elements with identical 
 
 Mergesort is guaranteed to be O(nlog2(n)). A disadvantage of mergesort is that it uses O(n) in space.
 
+--------------------------------------------
+
 Source: Javascript Data Structures and Algorithms by Sammie Bae (Ch.10 Searching and Sorting)
+--------------------------------------------
