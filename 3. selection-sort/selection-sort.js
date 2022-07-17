@@ -1,4 +1,7 @@
+// ----------------------------------------------------------------
+
 // LEGACY VERSION (non ES2015 syntax)
+
 function selectionSort1(arr) {
   for (var i = 0; i < arr.length; i++) {
     var lowest = i;
@@ -16,8 +19,14 @@ function selectionSort1(arr) {
   }
   return arr;
 }
+console.log(selectionSort1([0, 2, 34, 22, 10, 19, 17]));
+
+// returns => [ 0, 2, 10, 17, 19, 22, 34 ]
+
+// ----------------------------------------------------------------
 
 // ES2015 VERSION
+
 function selectionSort2(arr) {
   const swap = (arr, idx1, idx2) =>
     ([arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]);
@@ -35,4 +44,14 @@ function selectionSort2(arr) {
   return arr;
 }
 
-selectionSort2([0, 2, 34, 22, 10, 19, 17]);
+console.log(selectionSort2([0, 2, 34, 22, 10, 19, 17]));
+// returns => [ 0, 2, 10, 17, 19, 22, 34 ]
+
+// ----------------------------------------------------------------
+/*
+Time Complexity: O(n^2)
+Space Complexity: O(1)
+
+The time complexity for selection sort is still O(n ^ 2) because of the nested for loop.
+*/
+//----------------------------------------------------------------
