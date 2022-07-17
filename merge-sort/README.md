@@ -3,7 +3,8 @@ Mergesort
 Mergesort works by dividing the array into subarrays until each array has one element.
 Then, each subarray is concatenated(merged) in a sorted order
 
-//***********************************
+--------------------------------------------
+
 
 The merge function should add all the elements from both arrays in sorted order in a “result array.”
 
@@ -19,7 +20,8 @@ The elements need to be compared as they get merged to preserve order.
 
 Now, the mergeSort function has to partition the bigger array into two separate arrays and recursively call merge.
 
-//*****************************************
+--------------------------------------------
+
 
 Time Complexity and Space Complexity:
 
