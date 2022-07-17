@@ -1,6 +1,9 @@
 Mergesort
 
+--------------------------------------------
+
 Mergesort works by dividing the array into subarrays until each array has one element.
+
 Then, each subarray is concatenated(merged) in a sorted order
 
 --------------------------------------------
